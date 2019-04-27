@@ -25,13 +25,14 @@ myapp.set('views', __dirname + '/views');
 myapp.set('view engine', 'ejs');
 
 myapp.get('/', function (req, res) {
-    res.send('express is working');
+    res.send('Express is working');
 });
 
 myapp.get('/admin/login', function (req, res) {
     res.render('backend/upload-image', { message: '' });
 });
 
+// multer
 var storeapp = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, 'resources/uploads')
@@ -43,11 +44,12 @@ var storeapp = multer.diskStorage({
 });
 var upload = multer({ storage: storeapp });
 
-
+// Get 
 myapp.get('/admin/PostLoginSubmit', function (req, res) {
     res.render('backend/upload-image', { message: '' });
 });
 
+// POST
 myapp.post('/admin/postSubmit', upload.single('profile-photo'), function (req, res) {
     console.log(req.file);
     console.log(req.body);
@@ -57,8 +59,10 @@ myapp.post('/admin/postSubmit', upload.single('profile-photo'), function (req, r
     console.log(req.body.batch);
     console.log(req.file.originalname);
     console.log("Uploaded successfully.")
-
 });
 
 // PORT
 myapp.listen(3000);
+
+
+
