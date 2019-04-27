@@ -1,12 +1,13 @@
 {
   "name": "file-image-upload-using-express-and-multer-sarita77",
   "version": "1.0.0",
-  "description": "This is file showing express and multer use.",
+  "description": "This is project showing express and multer use.",
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/www",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "myscript": "PORT=3000 NODE_ENV=dev nodemon app.js"
+    "myscript": "PORT=3000 NODE_ENV=dev nodemon app.js",
+    "scriptdev": "PORT=5000 NODE_ENV=prod nodemon app.js"
   },
   "repository": {
     "type": "git",

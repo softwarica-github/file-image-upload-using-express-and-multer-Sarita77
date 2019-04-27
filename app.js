@@ -25,7 +25,7 @@ myapp.set('views', __dirname + '/views');
 myapp.set('view engine', 'ejs');
 
 myapp.get('/', function (req, res) {
-    res.send('Express is working');
+    res.send('Express is working.');
 });
 
 myapp.get('/admin/login', function (req, res) {
