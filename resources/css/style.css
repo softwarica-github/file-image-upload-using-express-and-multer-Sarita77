@@ -1,0 +1,23 @@
+/* Global CSS */
+body{
+    font-family: 'Lora', serif;
+}
+
+/* Profile Section CSS */
+#loginForm{
+    padding-left: 17px; 
+}
+
+.image-upload-heading{
+    padding: 20px 0;
+    padding-left: 9%;
+    background: #303638;
+    color: #fff;
+    /* text-align: center; */
+}
+.submit-btn{
+    padding: 5px 25px;
+    background: #303638;
+    color: #fff;
+    border-radius: 4px;
+}

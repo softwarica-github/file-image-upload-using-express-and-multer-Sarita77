@@ -1,0 +1,28 @@
+{
+  "name": "file-image-upload-using-express-and-multer-sarita77",
+  "version": "1.0.0",
+  "description": "This is file showing express and multer use.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "myscript": "PORT=3000 NODE_ENV=dev nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stw304cem/file-image-upload-using-express-and-multer-Sarita77.git"
+  },
+  "author": "Sarita Asthani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stw304cem/file-image-upload-using-express-and-multer-Sarita77/issues"
+  },
+  "homepage": "https://github.com/stw304cem/file-image-upload-using-express-and-multer-Sarita77#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "jquery": "^3.4.0",
+    "multer": "^1.4.1"
+  }
+}

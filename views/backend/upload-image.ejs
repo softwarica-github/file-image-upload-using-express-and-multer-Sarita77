@@ -1,0 +1,48 @@
+<% include partials/header %>
+
+<body>
+    <!-- Profile Section -->
+    <div class="profile">
+        <h2 class="image-upload-heading ">Form Submission </h2>
+        <div class="container">
+            <p>Please fill up the form for the college ID.</p>
+            <div class="row">
+                <!--FORM-->
+                <form id="loginForm" action="/admin/postSubmit" method="POST" enctype="multipart/form-data">
+                    <!--Full name-->
+                    <div class="form-group">
+                        <label for="fullname control-label">Full name</label>
+                        <input type="text" id="fullname" name="fullname" class="form-control">
+                    </div>
+                    <!--Address-->
+                    <div class="form-group">
+                        <label for="address control-label">Address</label>
+                        <input type="text" id="address" name="address" class="form-control">
+                    </div>
+                    <!--College ID-->
+                    <div class="form-group">
+                        <label for="collegeid control-label">College ID</label>
+                        <input type="text" id="college-id" name="collegeid" class="form-control">
+                    </div>
+                    <!--Batch-->
+                    <div class="form-group">
+                        <label for="batch control-label">Batch</label>
+                        <input type="text" id="batch" name="batch" class="form-control">
+                    </div>
+                    <!--Profile photo-->
+                    <div class="form-group">
+                        <label for="upload-image control-label">Upload image</label> <br>
+                        <input type="file" id="profile-photo" name="profile-photo" accept="image/*" multiple>
+                    </div>
+                    <!--Submit-->
+                    <input type="submit" value="Submit" class="submit-btn">
+                    <%= message %>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<% include partials/footer %>
